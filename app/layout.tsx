@@ -19,11 +19,29 @@ export default function RootLayout({
         <header className="nav">
           <div className="container navin">
             <Link href="/" className="brand">
-              <Image
-  src="/images/uniq.jpg"
-                alt="Unique Youth Association Logo" 
-                className="brandmark-img"
-              />
+              <div
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  flexShrink: 0,
+                }}
+              >
+                <Image
+                  src="/images/uniq.jpg"
+                  alt="Unique Youth Logo"
+                  width={50}
+                  height={50}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
+              </div>
+
               <span>Unique Youth Association</span>
             </Link>
 
