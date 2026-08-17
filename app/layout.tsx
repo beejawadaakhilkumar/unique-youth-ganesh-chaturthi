@@ -1,7 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import logoImg from "../../unique-youth-ganesh-chaturthi/public/images/uniq.jpg";
 
 export const metadata = {
   title: "Gayatri Nagar Ganesh Mahostvam | Unique Youth Association",
@@ -20,8 +19,8 @@ export default function RootLayout({
         <header className="nav">
           <div className="container navin">
             <Link href="/" className="brand">
-              <Image 
-                src={logoImg} 
+              <Image
+  src="/images/uniq.jpg"
                 alt="Unique Youth Association Logo" 
                 className="brandmark-img"
               />
